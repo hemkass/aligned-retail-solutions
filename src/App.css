@@ -1,1 +1,360 @@
 /* Other rules */
+
+:root {
+  --white: rgb(223, 219, 219);
+  --whiteTransp: rgb(223, 219, 219, 0.6);
+  --black: #000000;
+  --blackTrans: rgb(0, 0, 0, 0.7);
+  --grey1: #5e5e5e;
+  --grey2: #919191;
+  --grey3: #333;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  position: sticky;
+  height: 5vh;
+  width: 100vw;
+
+  display: flex;
+  gap: 50px;
+}
+
+header div {
+  height: max-content;
+  margin: auto 0 auto 0;
+  font-family: "Maitree", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 1.1em;
+}
+
+.menu-contact-div {
+  padding: 7px 15px 7px 15px;
+  border: solid thin var(--grey1);
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 72px;
+  line-height: 80px;
+  color: var(--black);
+}
+
+h2 {
+  font-family: "Cinzel", serif;
+}
+
+h3 {
+  font-family: "Prompt", sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-family: "Prompt", sans-serif;
+  font-family: "Prompt", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+p {
+  font-family: "Maitree", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  font-size: 1.2em;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.logo-div {
+  width: 1%;
+}
+
+.Menu-div {
+  display: flex;
+  gap: 20px;
+}
+
+.home-container {
+  height: 95vh;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.div-intro,
+.div-expertise,
+.div-results,
+.div-process,
+.div-about {
+  height: 95vh;
+  scroll-snap-align: center;
+}
+.div-intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-expertise {
+  background-color: blueviolet;
+}
+
+.div-results {
+  background-color: brown;
+}
+
+.div-process {
+  background-color: rgb(9, 192, 238);
+}
+
+.div-about {
+  background-color: burlywood;
+}
+
+/* ...................   DIV 1 ........................... */
+
+.home-slider-div {
+  height: 100%;
+  object-fit: cover;
+}
+.div1-Title {
+  height: max-content;
+}
+.div1-Title h1 {
+  z-index: 30;
+  color: black;
+}
+
+.BackgroundImage {
+  margin-top: 70px;
+  background-image: url("https://res.cloudinary.com/dyj84szrx/image/upload/v1642417376/ricky/fatigu%C3%A92_xx7mr4.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.9;
+  width: 100vw;
+
+  z-index: -20;
+  top: 0;
+  left: 0;
+  height: 70%;
+  /*  box-shadow: 100px -10px 500px 155px rgb(3, 3, 3) inset; */
+}
+
+.BackgroundImage:after {
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+  box-shadow: 300px -70px 200px -5px rgb(245, 243, 243) inset;
+}
+
+.div1-contact {
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  height: 60%;
+  background-color: black;
+}
+
+.div1-questions {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.chevron-right {
+  padding-right: 10px;
+}
+
+.div1-questions p {
+  font-weight: 500;
+  line-height: 50px;
+  color: white;
+}
+
+.div1-contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 15px 50px 15px 50px;
+  border: solid thin var(--grey1);
+  font-weight: 400;
+  width: 100%;
+}
+
+/* ................ Div2, Div3  ....................*/
+
+.bloc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+.bloc1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 20%;
+  height: 80%;
+  background-color: blue;
+}
+
+.bloc2 {
+  width: 80%;
+  flex-grow: 3;
+  height: 80%;
+  background-color: rgb(43, 226, 58);
+}
+
+.div2,
+.div3 {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.div2 h1,
+.div3 h1 {
+  font-size: 60px;
+  text-align: left;
+}
+/* ................ Div3 : Your results  ....................*/
+
+.div3 .bloc2 {
+  display: flex;
+
+  gap: 70px;
+}
+
+/* ................ Div4  ....................*/
+.div4 {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.Process {
+  display: flex;
+  width: 28%;
+  height: 40%;
+}
+
+.process-image-div {
+  width: 50%;
+  height: 100%;
+}
+
+/* ............... Form - Formulaire .................. */
+.form-div,
+.home-slider-div {
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 150px;
+}
+
+.form-left-div {
+  padding-left: 20%;
+  display: flex;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.form-data-div {
+  display: flex;
+  gap: 50px;
+}
+
+.submit-button {
+  /*  margin-bottom: 100px; */
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  text-align: left;
+}
+
+.submit-button button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  background: var(--black);
+  color: var(--white);
+  border-radius: 3px;
+  font-family: "Prompt", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.submit-button button:hover {
+  background: var(--grey3);
+}
+
+.form-message {
+  width: 80%;
+  height: 150px;
+  max-width: 600px;
+}
+
+form input {
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  border-bottom: solid thin var(--grey1);
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+form textarea {
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+  border: solid thin var(--grey1);
+  font-size: 17px;
+}
+
+form textarea::placeholder {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 15px;
+}
+
+form input::placeholder {
+  font-family: "Prompt", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
