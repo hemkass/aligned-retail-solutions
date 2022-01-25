@@ -16,7 +16,7 @@ const HomeDiv1 = () => {
       </div>{" "}
       <div className="div1-contact">
         <div className="div1-questions">
-          <div>
+          <div className="left-question">
             <p>
               {" "}
               <FontAwesomeIcon className="chevron-right" icon="chevron-right" />
@@ -55,6 +55,8 @@ const HomeDiv1 = () => {
               Frustrated with retail routing guide compliance?
             </p>
           </div>
+        </div>
+        <div className="div1-contact-text">
           <Link to="/contact" className="link">
             <div className="div1-contact-link">
               <h2>Speak to a supply chain expert</h2>

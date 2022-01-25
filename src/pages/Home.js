@@ -2,6 +2,7 @@ import HomeDiv1 from "../components/Home-div1";
 import Expertise from "../components/Expertise";
 import YourResults from "../components/YourResults";
 import Process from "../components/Process";
+import About from "../components/About";
 
 const Home = () => {
   return (
@@ -20,7 +21,9 @@ const Home = () => {
         <div id="div-menu-4" className="div-process">
           <Process />
         </div>
-        <div id="div-menu-5" className="div-about"></div>
+        <div id="div-menu-5" className="div-about">
+          <About />
+        </div>
       </div>
     </div>
   );

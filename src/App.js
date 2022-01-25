@@ -7,9 +7,20 @@ import CaseStudies from "./pages/CaseStudies";
 import Form from "./components/Form";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faChevronRight, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronRight,
+  faChevronLeft,
+  faTimes,
+  faArrowAltCircleRight,
+  faArrowAltCircleLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
-library.add(faChevronRight, faTimes);
+library.add(
+  faChevronRight,
+  faArrowAltCircleRight,
+  faChevronLeft,
+  faArrowAltCircleLeft
+);
 
 function App() {
   const handleScrollHome = (elem) => {

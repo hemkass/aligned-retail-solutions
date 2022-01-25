@@ -25,10 +25,13 @@ const Header = ({ handleScroll }) => {
         }}
         className="logo-div"
       >
-        Logo
+        <img
+          src="https://res.cloudinary.com/dyj84szrx/image/upload/v1643124748/ricky/logoblanc_mbltp3.png"
+          alt="logo de Aligned retail solutions"
+        />
       </div>
-
-      {location.pathname === "/" && <Menu handleScroll={handleScroll} />}
+      {/*  {location.pathname === "/" && */}{" "}
+      <Menu handleScroll={handleScroll} />
     </>
   );
 };

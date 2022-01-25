@@ -1,13 +1,19 @@
 /* Other rules */
-
+.body {
+  width: 100vw;
+  margin: 0;
+}
 :root {
+  --color2: whitesmoke;
+  --color3: black;
   --white: rgb(223, 219, 219);
   --whiteTransp: rgb(223, 219, 219, 0.6);
   --black: #000000;
   --blackTrans: rgb(0, 0, 0, 0.7);
   --grey1: #5e5e5e;
   --grey2: #919191;
-  --grey3: #333;
+  --grey3: rgb(17, 17, 17);
+  --color1: rgb(27, 76, 112);
 }
 
 img {
@@ -18,9 +24,12 @@ img {
 
 header {
   position: sticky;
-  height: 5vh;
-  width: 100vw;
+  height: 10vh;
+  width: 99vw;
 
+  /*  margin-top: 10px;
+  margin-bottom: 10px; */
+  margin-left: 50px;
   display: flex;
   gap: 50px;
 }
@@ -36,8 +45,10 @@ header div {
 
 .menu-contact-div {
   padding: 7px 15px 7px 15px;
-  border: solid thin var(--grey1);
+  border: 3px double var(--color1);
+
   font-weight: 400;
+  color: var(--color1);
 }
 
 h1 {
@@ -59,16 +70,24 @@ h3 {
 
 h4 {
   font-family: "Prompt", sans-serif;
-  font-family: "Prompt", sans-serif;
+
   font-size: 18px;
   line-height: 24px;
 }
 
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
 p {
-  font-family: "Maitree", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
-  line-height: 1.2;
-  font-size: 1.2em;
+  line-height: 1.4;
+  font-size: 1.1em;
 }
 
 .link {
@@ -77,7 +96,8 @@ p {
 }
 
 .logo-div {
-  width: 1%;
+  padding-top: 10px;
+  width: 8%;
 }
 
 .Menu-div {
@@ -86,7 +106,7 @@ p {
 }
 
 .home-container {
-  height: 95vh;
+  height: 90vh;
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -97,7 +117,10 @@ p {
 .div-results,
 .div-process,
 .div-about {
-  height: 95vh;
+  width: 100%;
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
   scroll-snap-align: center;
 }
 .div-intro {
@@ -106,24 +129,28 @@ p {
 }
 
 .div-expertise {
-  background-color: blueviolet;
+  background-color: var(--grey3);
 }
 
 .div-results {
-  background-color: brown;
+  background-color: var(--color2);
 }
 
 .div-process {
-  background-color: rgb(9, 192, 238);
+  background-color: var(--color2);
 }
 
 .div-about {
-  background-color: burlywood;
+  background-color: var(--color2);
 }
 
 /* ...................   DIV 1 ........................... */
+.div1-questions p {
+  font-size: 1.3em;
+}
 
 .home-slider-div {
+  width: 100vw;
   height: 100%;
   object-fit: cover;
 }
@@ -132,18 +159,18 @@ p {
 }
 .div1-Title h1 {
   z-index: 30;
-  color: black;
+  color: var(--color3);
 }
 
 .BackgroundImage {
-  margin-top: 70px;
+  margin-top: 10vh;
   background-image: url("https://res.cloudinary.com/dyj84szrx/image/upload/v1642417376/ricky/fatigu%C3%A92_xx7mr4.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
   opacity: 0.9;
-  width: 100vw;
+  width: 100%;
 
   z-index: -20;
   top: 0;
@@ -165,17 +192,30 @@ p {
 }
 
 .div1-contact {
+  width: 100%;
   padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   align-items: center;
   height: 60%;
-  background-color: black;
+  /*  background-color: rgb(25, 0, 255); */
+  background-color: var(--color3);
 }
 
 .div1-questions {
+  /* background-color: yellow; */
+  width: 60%;
+  margin-right: 50px;
   display: flex;
-  align-items: center;
-  gap: 150px;
+  align-items: flex-start;
+  gap: 70px;
+}
+.div1-contact-text {
+  /*   background-color: yellowgreen; */
+  width: 30%;
+}
+.left-question {
+  width: 40%;
 }
 
 .chevron-right {
@@ -184,19 +224,19 @@ p {
 
 .div1-questions p {
   font-weight: 500;
-  line-height: 50px;
-  color: white;
+
+  color: var(--color2);
 }
 
 .div1-contact-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  padding: 15px 50px 15px 50px;
+  color: var(--color2);
+  padding: 15px 20px 15px 20px;
+
   border: solid thin var(--grey1);
   font-weight: 400;
-  width: 100%;
 }
 
 /* ................ Div2, Div3  ....................*/
@@ -204,7 +244,9 @@ p {
 .bloc {
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
+
+  width: 95%;
   height: 90%;
 }
 .bloc1 {
@@ -212,21 +254,22 @@ p {
   align-items: center;
   justify-content: center;
   flex-grow: 1;
-  width: 20%;
+  width: 15%;
+
   height: 80%;
-  background-color: blue;
 }
 
 .bloc2 {
-  width: 80%;
+  width: 77%;
   flex-grow: 3;
   height: 80%;
-  background-color: rgb(43, 226, 58);
 }
 
 .div2,
-.div3 {
-  padding: 50px;
+.div3,
+.div5,
+.div6 {
+  padding: 50px 50px 50px 50px;
   width: 100%;
   height: 100%;
 }
@@ -236,31 +279,230 @@ p {
   font-size: 60px;
   text-align: left;
 }
+
+/* ................ Div2 : Your results  ....................*/
+
+.div2,
+.div4 {
+  color: var(--color2);
+}
+
+.div2 h1 {
+  color: var(--color2);
+}
 /* ................ Div3 : Your results  ....................*/
 
-.div3 .bloc2 {
+.div3 .bloc2,
+.div2 .bloc2,
+.div6 .bloc2 {
   display: flex;
-
   gap: 70px;
 }
 
 /* ................ Div4  ....................*/
 .div4 {
   padding: 50px;
+  width: 100%;
+
+  /*  position: relative; */
+}
+
+.div4 .bloc2 {
+  color: var(--color3);
+}
+
+.gallery {
   display: flex;
-  flex-wrap: wrap;
+
+  gap: 70px;
+}
+
+.div4 .bloc {
+  /* margin-top: 100px; */
+  position: relative;
+  background-color: var(--grey3);
+}
+
+.div4 .bloc2 {
+  display: flex;
+  overflow: scroll;
+  overflow: hidden;
   gap: 100px;
 }
 
 .Process {
+  width: 350px;
+  height: 90%;
+  /*  background-color: var(--color2); */
+  /*   background-color: brown; */
+  margin-left: 50px;
+  /* border: 1px double var(--grey1); */
+  padding: 10px;
   display: flex;
-  width: 28%;
-  height: 40%;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.process-image-div {
-  width: 50%;
+.process-image-div img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.next-icon,
+.prev-icon {
+  top: 45%;
+  font-size: 70px;
+  position: absolute;
+  z-index: 50;
+  color: var(--color2);
+  /* background-color: var(--color1); */
+  box-shadow: 1px 1px 5px 1px var(--color2);
+}
+
+.next-icon {
+  right: -1%;
+}
+
+.prev-icon {
+  left: 14%;
+}
+
+.div4 .bloc2 h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: whitesmoke;
+}
+.div4 p {
+  color: var(--color2);
+
+  margin-bottom: 15px;
+}
+.title-box {
+  height: 7vh;
+}
+/* ................ Div5 : About US  ....................*/
+
+.skewed {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  /*   background-color: black; */
+  background: #2c3e50;
+  z-index: -2;
+  transform: skewY(9deg) translateY(-50px);
+  transform-origin: top right;
+}
+
+.div5 .bloc1 {
+  /*  background-color: var(--color1); */
+  background-color: whitesmoke;
+
+  padding: 0px 50px 50px 50px;
+
+  width: 40%;
+  min-width: 470px;
+  height: 100%;
+}
+
+.div5 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.div5 .bloc {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.div5 h1 {
+  z-index: 50;
+  font-size: 3em;
+  line-height: 1.4em;
+}
+.div5 .bloc2 {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  /*   width: 100%; */
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  flex-direction: column;
+  gap: 70px;
+}
+.profil-box {
+  width: 100%;
+  padding: 50px;
+
+  display: flex;
+  gap: 30px;
+}
+
+.profil-img-box {
+  width: 20%;
+  height: 20%;
+}
+
+.profil-description-box {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  padding: 0 50px 0 50px;
+  /*  background-color: brown; */
+}
+
+.profil-description-box div:last-child {
+  padding-top: 20px;
+  color: black;
+}
+
+/* .miniature-profil-rond {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: inset -10px -10px 10px 10px rgba(240, 229, 229, 0.5);
+} */
+
+.profil-img-box {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("https://res.cloudinary.com/dyj84szrx/image/upload/v1643026775/ricky/1597248041722_ringk6.jpg");
+  background-size: contain;
+
+  box-shadow: inset 10px 10px 30px 10px rgba(19, 2, 2, 0.5);
+  background-repeat: no-repeat;
+}
+
+/* .................  div6 ........ .....   */
+.div6 .bloc2 {
+  flex-wrap: wrap;
+}
+.case-study-box {
+  width: 350px;
+  height: 300px;
+  /*  background-color: var(--color2); */
+
+  margin-left: 50px;
+  /* border: 1px double var(--grey1); */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /* ............... Form - Formulaire .................. */

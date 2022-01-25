@@ -55,7 +55,7 @@ const Form = () => {
             value={mess}
           ></textarea>
           <div className="submit-button">
-            <button>Envoyer mon message</button>
+            <button>Send message</button>
           </div>
           <div className="submit-button"></div>
         </form>

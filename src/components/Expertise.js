@@ -10,7 +10,20 @@ const Expertise = () => {
         <div className="bloc1">
           <h3>We specialize in :</h3>{" "}
         </div>
-        <div className="bloc2"></div>
+        <div className="bloc2">
+          <div>
+            <h4>Freight & Logistics</h4>
+          </div>
+          <div>
+            <h4>Retail Compliance</h4>
+          </div>
+          <div>
+            <h4>Global Shipping</h4>
+          </div>
+          <div>
+            <h4>Order to Cash Process Improvement </h4>
+          </div>
+        </div>
       </div>
     </div>
   );
