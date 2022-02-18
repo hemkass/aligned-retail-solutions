@@ -8,20 +8,54 @@ const Expertise = () => {
       </div>
       <div className="bloc">
         <div className="bloc1">
-          <h3>We specialize in :</h3>{" "}
+          <h2>We specialize in :</h2>{" "}
         </div>
         <div className="bloc2">
-          <div>
-            <h4>Freight & Logistics</h4>
+          <div className="icon_bloc">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645180732/ricky/icon_freight_bfhixe.png"
+                alt="icon"
+              />
+            </div>
+            <div>
+              <h4>Freight & Logistics</h4>
+            </div>
           </div>
-          <div>
-            <h4>Retail Compliance</h4>
+          <div className="icon_bloc">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645180732/ricky/compliance_ersubq.png"
+                alt="icon"
+              />
+            </div>
+            <div>
+              <h4>Retail Compliance</h4>
+            </div>
           </div>
-          <div>
-            <h4>Global Shipping</h4>
+          <div className="icon_bloc">
+            <div>
+              {" "}
+              <img
+                src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645180732/ricky/icon_global-shipping_zutmea.png"
+                alt="icon"
+              />
+            </div>
+
+            <div>
+              <h4>Global Shipping</h4>
+            </div>
           </div>
-          <div>
-            <h4>Order to Cash Process Improvement </h4>
+          <div className="icon_bloc">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dyj84szrx/image/upload/v1645180732/ricky/order_to_cash_u3l4z0.png"
+                alt="icon"
+              />
+            </div>
+            <div>
+              <h4>Order to Cash Process Improvement </h4>
+            </div>
           </div>
         </div>
       </div>

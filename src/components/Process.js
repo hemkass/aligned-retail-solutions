@@ -5,6 +5,47 @@ const Process = () => {
   const [state, setstate] = useState("");
   const items = document.getElementsByClassName("Process");
 
+  let count = 0;
+  const handleNext = (event) => {
+    console.log(count);
+    /* console.log(items); */
+    if (count < items.length - 1) {
+      items[Number(count) + 1].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+      count++;
+    } else {
+      count = 0;
+      items[0].scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    }
+  };
+
+  const handlePrev = (event) => {
+    if (count > 0) {
+      count--;
+      items[count].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    } else {
+      console.log("test", items.length);
+      count = items.length - 1;
+      items[items.length - 1].scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
+  /* 
   let count = 3;
 
   console.log("count", count);
@@ -44,7 +85,7 @@ const Process = () => {
         inline: "nearest",
       });
     }
-  };
+  }; */
 
   return (
     <div className="div4">
@@ -59,7 +100,7 @@ const Process = () => {
           />
         </div>
         <div className="bloc1">
-          <h3>Our Process :</h3>
+          <h2>Our Process :</h2>
         </div>
         <div className="bloc2">
           <div className="gallery">
